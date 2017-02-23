@@ -5,7 +5,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class GoogleSearchTest {
 	
-	public static void main(String...args) {
+	public static void main() {
 		
 		WebDriver driver  = new FirefoxDriver();
 		driver.navigate().to("http://google.com");
