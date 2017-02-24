@@ -3,13 +3,7 @@
   <groupId>com</groupId>
   <artifactId>test1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-    <build>
-    <pluginManagement>
-    <plugins>
-      
-    </plugins>
-  </pluginManagement>
-    </build>
+    
   <dependencies>
   <dependency>
 			<groupId>junit</groupId>
@@ -35,16 +29,21 @@
         <artifactId>maven-surefire-report-plugin</artifactId>
         <version>2.19.1</version>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.0</version>
-        <configuration>
-          <source>1.5</source>
-          <target>1.5</target>
-        </configuration>
-      </plugin>
+      
     </plugins>
   </reporting>
+ <build>
+     <defaultGoal>install</defaultGoal>
+     <plugins>
+          <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-compiler-plugin</artifactId>
+               <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+               </configuration>
+          </plugin>
+      </plugins>
+</build>
   
 </project>
