@@ -1,9 +1,9 @@
-package pack;
+package test1;
 
 import org.junit.Before;
 import org.junit.Test;
 
-public class GooTest {
+public class GoTest {
 	
 	@Before
 	public void syout()
@@ -16,6 +16,5 @@ public class GooTest {
 	{
 		System.out.println("tests");
 	}
-
 
 }
